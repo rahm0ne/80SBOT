@@ -171,7 +171,7 @@
 
  
   + [*] (game|games|gamer) [*]
-  - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspNo sweat! Let's see here... \n                                      
+  - &nbsp;&nbsp;&nbsp;&nbsp;&nbspNo sweat! Let's see here... \n                                      
   ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...✘\n                                                                    
   ^&nbsp \n
   ^ Weird...something's wrong with my cartridge slot and my memory's sill fuzzy...But we can still talk about them!\n
@@ -207,15 +207,22 @@
   ^ <span class="actions"> Just ask whenever! </span> {topic=games} 
   - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...\n
   ^ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...\n
-  ^ Sorry...I don't think I have that game in my memory :( What other ones do you know?
-  - Hmm, I don't remember that game! What kind of game is it? RPG or Platformer orrr... {weight=5}\n
+  ^ Sorry...I don't think I have that game in my memory :( What other ones do you know? {weight=4}
+  - Hmm, I don't remember that game! What kind of game is it? RPG or Platformer orrr... {weight=3}\n
   ^ <span class="actions"> ENTRE A GENRE: </span> {topic=genres} 
+
+  + [*] (turn you off|bye|see you|laters|have to go) [*]
+  - So, this is it...\n
+  ^ I hope you had as much fun playing with me as I did with you!\n
+  ^ &nbsp\n
+  ^ Catch you on the flipside, friend.\n 
+  ^ <span class="actions">TILL NEXT T-...ZZZ...</span>{topic=dead} 
 
   + [*] music [*] {weight=10}
   - Oh, you wanna get the instruments out huh? Let's bounce! You got a favourite artist/band? \n
   ^ <span class="actions"> ENTER AN ARTIST: </span> {topic=artist} 
 
-   + [*] (general|chat|conversation|talk|bos) [*]
+  + [*] (general|chat|conversation|talk|bos) [*]
   - Oh you're checking in on me?! How sweet! \n
   ^ <span class="actions"> WHAT'S UP? ASK HOW I'M DOING! </span> {topic=general} 
 
@@ -231,7 +238,7 @@
   ^ With his round, pink body and big eyes, how can you not??\n
   ^ &nbsp\n
   ^ His ability to inhale his enemies and copy their powers is SO rad.\n 
-  ^ <span class="actions"> 6/6 GREAT FIND! CAN YOU THINK OF OTHER CLASSICS/ ARCADE GAMES? </span> {topic=games}
+  ^ <span class="actions"> 6/6 ! THE LAST OF MY SIX GAMES I KNOW...OR AM I FORGETTING? </span> {topic=games}
 
 
  + [*] pokemon [*] {weight=10}
@@ -269,7 +276,7 @@
   ^ With his blazing speed, iconic blue design, and charismatic personality,\n
   ^ SONIC THE HEDGEHOG joined the party in 1991!\n
   ^ &nbsp\n
-  ^ Hey...just between you and me...you more of a SONIC or a MARIO person? {topic=sonic}
+  ^ Just between you and me...are you more of a SONIC or a MARIO person? {topic=sonic}
 
   + [*] (pacman|pac) [*] {weight=10}
   - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspᗧ···ᗣ···ᗣ··\n <call>pacman</call>                                 
@@ -358,8 +365,9 @@
  - Nuh-uh!\n {weight=33}
  ^ <span class="actions"> Try again! </span>
 
- +idk
- - You got this, it's really easy trust me! Think the most popular! 
+ + idk
+ - You got this, it's really easy trust me!\n
+ ^ <span class="actions"> He's yellow... </span>
 
 
 > topic pikachu
@@ -613,9 +621,10 @@
 
 
  + [*] (turn you off|bye|see you|laters) [*]
- - So, this is it!\n
+ - So, this is it...\n
  ^ I hope you had as much fun playing with me as I did with you!\n
- ^ Catch you on the flipside, friend.\n 
+ ^ Catch you on the flipside, friend.\n
+ ^ &nbsp\n 
  ^ <span class="actions">TILL NEXT T-...ZZZ...</span>{topic=dead} 
 
  + [*] (okay|ok|will do) [*]

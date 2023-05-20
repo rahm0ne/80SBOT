@@ -217,12 +217,12 @@ body{
   outline: 0;
   border-top: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #19654c16;
+  border-bottom: 2px solid #19654c16;
   border-left: 0px;
 }
 
 input:focus {
-  border-bottom: 1px solid #c0d7bf00;
+  border-bottom: 2px solid #c0d7bf00;
 }
 
 @media all and (min-width: 720px) {
