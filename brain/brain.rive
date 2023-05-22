@@ -164,7 +164,7 @@
  ^ &nbsp;\n
  - Sorry, I think my ears are still a bit fuzzy from the static. What did you mean? \n
  ^ <span class="actions"> CHOOSE BETWEEN GAMES, MUSIC, OR ME! BOS! </span> {topic=optionselect}
- - What's up with that pink moon? Have you tried inspecting it yet? Sorry. Distracted.
+ - What's up with that pink moon? Have you looked at it yet? Sorry. Distracted. \n
  ^ <span class="actions"> CHOOSE BETWEEN GAMES, MUSIC, OR ME! BOS! </span> {topic=optionselect}
  - Sorry friend, You can only pick from the three options! What would you like to do? \n
  ^ <span class="actions"> CHOOSE BETWEEN GAMES, MUSIC, OR ME! BOS! </span> {topic=optionselect}
@@ -172,12 +172,12 @@
  
   + [*] (game|games|gamer) [*]
   - &nbsp;&nbsp;&nbsp;&nbsp;&nbspNo sweat! Let's see here... \n                                      
-  ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...✘\n                                                                    
+  ^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp...✘\n                                                                    
   ^&nbsp \n
   ^ Weird...something's wrong with my cartridge slot and my memory's sill fuzzy...But we can still talk about them!\n
   ^ &nbsp \n
   ^ Sorry to ask but...could you help me remember my games? \n
-  ^ <span class="actions"> THINK OF A CLASSIC GAME: </span> {topic=games}
+  ^ <span class="actions"> IF YOU EVER WANT TO SWITCH BETWEEN TOPICS JUST ASK! THINK OF A CLASSIC GAME: </span> {topic=games}
 
   + [*] (chat|you|bos) [*]
   - All these options and you'd rather talk with me?! *sniffle sniffle*\n 
@@ -202,6 +202,7 @@
    ^ &nbsp;\n
     - What's up with that pink moon? Have you tried inspecting it yet? Sorry. Distracted. 
   - Name a game! I'll see if I know it.
+  - If you're reaallyyy stumped, you could ask for a HINT...I'll check what my memory's got left! {weight=2}
   - My memory's corrupt, is that really a game? 
   - My head hurts...Sorry what were you saying? Y'know, if you ever wanna talk about music or about stuff in general instead, feel free to let me know! \n
   ^ <span class="actions"> Just ask whenever! </span> {topic=games} 
@@ -210,6 +211,23 @@
   ^ Sorry...I don't think I have that game in my memory :( What other ones do you know? {weight=4}
   - Hmm, I don't remember that game! What kind of game is it? RPG or Platformer orrr... {weight=3}\n
   ^ <span class="actions"> ENTRE A GENRE: </span> {topic=genres} 
+
+  + [*] (hint|clue|help) [*]
+  - 1. ...PLUMBER...\n
+  ^ 2. ...POCKET MONSTERS...\n 
+  ^ 3. ...GREEN TUNIC...\n 
+  ^ 4. ...GHOSTS...\n
+  ^ 5. ...GREEN HILLS...\n 
+  ^ 6. ...INHALE...\n 
+  ^ ?  ...BANANAS...\n 
+  ^ ?  ...T-SPIN...\n 
+  ^ ?  ...FIGHT!...\n
+  ^ ?  ...RPG...\n   
+  ^ &nbsp\n
+  ^ That's all I have left...GOOD LUCK!\n 
+  ^ <span class="actions">ENTER A GAME:</span>{topic=games} 
+
+  
 
   + [*] (turn you off|bye|see you|laters|have to go) [*]
   - So, this is it...\n
@@ -221,6 +239,10 @@
   + [*] music [*] {weight=10}
   - Oh, you wanna get the instruments out huh? Let's bounce! You got a favourite artist/band? \n
   ^ <span class="actions"> ENTER AN ARTIST: </span> {topic=artist} 
+
+  + [*] wow [*] 
+  - We're only getting started! 
+  ^ <span class="actions"> KEEP GOING! </span> {topic=games} 
 
   + [*] (general|chat|conversation|talk|bos) [*]
   - Oh you're checking in on me?! How sweet! \n
@@ -238,7 +260,7 @@
   ^ With his round, pink body and big eyes, how can you not??\n
   ^ &nbsp\n
   ^ His ability to inhale his enemies and copy their powers is SO rad.\n 
-  ^ <span class="actions"> 6/6 ! THE LAST OF MY SIX GAMES I KNOW...OR AM I FORGETTING? </span> {topic=games}
+  ^ <span class="actions"> 6/6 ! THE LAST OF MY SIX GAMES I KNOW...OR AM I FORGETTING AGAIN... </span> {topic=games}
 
 
  + [*] pokemon [*] {weight=10}
@@ -302,7 +324,7 @@
   + [*] (street|fighter) [*] {weight=10}                          
   - YOU KNOW STREET FIGHTER!? \n <call>streetfighter</call> 
   ^ &nbsp\n
-  ^ Y'know, I heard there's a SECRET CODE in the STARS! If you type the inputs into my system, you'll unlock something cool! I wonder what it does...\n
+  ^ Y'know, I heard there's a SECRET CODE in the PURPLE STARS! If you type the inputs into my system, you'll unlock something cool! I wonder what it does...\n
   ^ <span class="actions"> 9/9!!! THAT'S THE LAST GAME IN MY MEMORY! DID YOU FIND THEM ALL? IF YOU DID, LET'S TALK ABOUT MUSIC, OR ME!</span> {topic=games}  
   
 > topic genres
@@ -367,7 +389,7 @@
 
  + idk
  - You got this, it's really easy trust me!\n
- ^ <span class="actions"> He's yellow... </span>
+ ^ <span class="actions"> PSST...He's yellow... </span>
 
 
 > topic pikachu
@@ -489,6 +511,9 @@
  - Nuh-uh!\n {weight=33}
  ^ <span class="actions"> Try again! </span> 
 
+ + idk
+ - ...It's literally multiple choice. Swing until you miss!\n
+
  > topic response2
 
  + *
@@ -512,11 +537,7 @@
 
 
 
-+ thank you
-- Anytime <get name>. {weight=50}
-- cool now go away {weight=10}
-- Welcome {weight=20}
-- No prob. {weight=20}
+
 
 // GENERAL
 
@@ -530,7 +551,7 @@
    ^ &nbsp;\n
    ^ &nbsp;
 
- + [*] how are you [*] {weight=7}
+ + [*] (how are you|how r u) [*] {weight=7}
  - Apart from my memory acting up, I'm okay! How about you? {topic=mood}
  - Can't complain when I can come back to life, how 'bout you? {topic=mood}
  - I'm feeling a little bit glitchy, but don't worry, it's nothing serious. You holdin' up okay? {topic=mood}
@@ -596,7 +617,8 @@
  ^ &nbsp\n  
  ^ But don't get me started on ADVANCE- he think's he's SO much better than us. {topic=general}
 
- + [*] (awesome|great|cool|nice|dope|sweet) [*]
+ + [*] (awesome|great|cool|nice|dope|sweet|wow) [*]
+ - :) {topic=general}
  - Coolio indeed. {topic=general}
  - Yup. What else you got for me? Y'know we can switch topics if you want! {topic=general}
 
@@ -611,7 +633,7 @@
  ^ &nbsp\n  
  ^ How about you? What's your favourite game? {topic=favegame}
 
- + [*] (favourite songf|avourite artist) [*]
+ + [*] (favourite song|avourite artist) [*]
  -  Call me basic, but MICHAEL JACKSON and his latest hit SMOOTH CRIMINAL? SO tight dude.{topic=general}
  ^ <span class="actions"> ASK ME HOW I AM! OR ABOUT MY MEMORY! {topic=general} 
 
