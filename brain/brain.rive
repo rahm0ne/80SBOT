@@ -550,6 +550,10 @@
    ^ &nbsp;\n
    ^ &nbsp;\n
    ^ &nbsp;
+   - Ugh, now my button's are messing up...Sorry, you said something?
+   - Sorry did you say something? \n
+   ^ <span class="actions">Y'know, you could check how I'm doing if you haven't already... {topic=general}
+   - Whaddya mean?
 
  + [*] (how are you|how r u) [*] {weight=7}
  - Apart from my memory acting up, I'm okay! How about you? {topic=mood}
@@ -562,11 +566,6 @@
  ^ Have you seen it? {topic=bttf}
  - Hangin' in there, it's been a grody week dude. How about you? {topic=mood}
 
- + *
- - Ugh, now my button's are messing up...Sorry, you said something?
- - Sorry did you say something? \n
- ^ <span class="actions">Y'know, you could check how I'm doing if you haven't already... {topic=general}
- - Whaddya mean?
 
  + [*] music [*] {weight=7}
  - MUSIC's rad! Did you wanna talk about it more? {topic=musicselect}
@@ -583,6 +582,11 @@
  + [*] where are you from [*] {weight=7}
  - What kind of question is that!? I'm from here, wherever you're from! 1995 and I'm feeling alive!
   ^ <span class="actions"> You know where I'm from...but what am I..? {topic=general}
+
+ + [*] (are you real| r u real) [*] {weight=7}
+- You put your grubby hands on  me and you STILL ask if I'm real? Of course I am!\n
+  ^ <span class="actions"> Ask about my memory! {topic=general}
+
 
 
  + [*] what are you [*] {weight=7}
